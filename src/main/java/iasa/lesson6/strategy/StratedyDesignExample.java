@@ -1,6 +1,6 @@
 package iasa.lesson6.strategy;
 
-public class Main {
+public class StratedyDesignExample {
     public static void main(String[] args) {
         Robot r1 = new Robot("Robot 1");
         Robot r2 = new Robot("Robot 2");
