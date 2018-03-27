@@ -52,7 +52,7 @@ public class LpLineToArray implements ListProcess {
 
     @Override
     public List<String> list() {
-        ArrayList<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         for (String s : listIt()) {
             result.add(new SpTrimmed(new SpUnQuoted(s)).data());
         }

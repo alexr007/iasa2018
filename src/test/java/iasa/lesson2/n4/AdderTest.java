@@ -18,7 +18,7 @@ public class AdderTest {
 
     @Test
     public void add3() {
-        assertEquals(0, new Adder(-2,3).add());
+        assertEquals(0, new Adder(-3,3).add());
     }
 
 }

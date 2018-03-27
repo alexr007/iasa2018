@@ -1,5 +1,5 @@
 package iasa.lesson2.n2;
 
-public interface ConvetGen<IN, OUT> {
+public interface ConvertGen<IN, OUT> {
     OUT apply(IN origin);
 }

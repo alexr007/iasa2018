@@ -15,12 +15,7 @@ public class LogicTest {
                 System.out.println("Good bye...");
             }
         };
-        Process prc = new Process() {
-            @Override
-            public String process(String src) {
-                return src.toUpperCase();
-            }
-        };
+        ProcessOne prc = new ProcessOne();
         Logic logic = new Logic(in, out, prc);
 
         logic.run();

@@ -2,21 +2,21 @@ package iasa.lesson2.n2;
 
 public class Test2 {
     public static void main(String[] args) {
-        ConvetGen<Integer, Integer> conv1 = new ConvetGen<Integer, Integer>() {
+        ConvertGen<Integer, Integer> conv1 = new ConvertGen<Integer, Integer>() {
             @Override
             public Integer apply(Integer origin) {
                 return null;
             }
         };
 
-        ConvetGen<String, String> conv2 = new ConvetGen<String, String>() {
+        ConvertGen<String, String> conv2 = new ConvertGen<String, String>() {
             @Override
             public String apply(String origin) {
                 return null;
             }
         };
 
-        ConvetGen<Integer, String> conv3 = new ConvetGen<Integer, String>() {
+        ConvertGen<Integer, String> conv3 = new ConvertGen<Integer, String>() {
             @Override
             public String apply(Integer origin) {
                 return null;

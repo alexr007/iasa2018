@@ -12,6 +12,7 @@ public class SpStripNonASCII implements StringProcess {
         this.origin = origin;
     }
 
+    @Override
     public String data() {
         return origin.replaceAll(SEARCH, REPLACE);
     }

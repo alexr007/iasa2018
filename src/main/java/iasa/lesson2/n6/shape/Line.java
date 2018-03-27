@@ -14,8 +14,8 @@ public final class Line extends AbstractShape implements JsonSerialized {
     private final int x2;
     private final int y2;
 
-    Point p1;
-    Point p2;
+    Point3D p1;
+    Point3D p2;
 
     public Line(int x1, int y1, int x2, int y2) {
         this.x1 = x1;
