@@ -8,8 +8,8 @@ import java.util.List;
 public class Publisher {
     private List<Subscriber> subscribers = new ArrayList<>();
 
-    public void publishMagazine() {
-        // create new Event
+    public void publishDoc() {
+        // create new Document
         Document ent = new Document();
         // publish this Event to all subscribers
         for (Subscriber s : subscribers) {
@@ -21,10 +21,15 @@ public class Publisher {
         subscribers.add(subscriber);
     }
 
-    public void unsubscribe(Subscriber subscriber) {
-        int index = subscribers.indexOf(subscriber);
+    public void unsubscribe(Subscriber s) {
+        if (subscribers.contains(s)) {
+            subscribers.remove(s);
+        }
+/*
+        int index = subscribers.indexOf(s);
         if (index >= 0) {
             subscribers.remove(index);
         }
+*/
     }
 }

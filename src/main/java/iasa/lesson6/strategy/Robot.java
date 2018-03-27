@@ -8,13 +8,12 @@ public class Robot {
         this.name = name;
     }
 
-    public void setBehaviour(Behaviour behaviour) {
-        this.behaviour = behaviour;
+    public void setBehaviour(Behaviour b) {
+        this.behaviour = b;
     }
 
     public void move() {
-        System.out.printf("Name:%s: ",name);
-        int command = behaviour.moveCommand();
+        System.out.printf("Name:%s: %2d ",name, behaviour.moveCommand());
     }
 
     public String getName() {

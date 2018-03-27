@@ -16,18 +16,18 @@ public class ObserverDesignExample {
         publisher.subscribe(petro);
 
         System.out.println("-- stage 1 --");
-        publisher.publishMagazine(); // add "Document #1"
+        publisher.publishDoc(); // add "Document #1"
         printMe(); // sasha pasha petro got Document #1
 
         System.out.println("-- stage 2 --");
-        publisher.publishMagazine(); // add "Document #2"
+        publisher.publishDoc(); // add "Document #2"
         printMe(); // sasha pasha petro got Document #2
 
         System.out.println("-- stage 3 --");
-        publisher.subscribe(masha); // masha won't get Document #3
-        publisher.unsubscribe(sasha); // sasha will get Document #3
+        publisher.subscribe(masha); // masha will get Document #3
+        publisher.unsubscribe(sasha); // sasha won't get Document #3
 
-        publisher.publishMagazine(); // add "Document #3"
+        publisher.publishDoc(); // add "Document #3"
         printMe();
     }
 

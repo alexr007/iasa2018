@@ -6,16 +6,20 @@ public class StratedyDesignExample {
         Robot r2 = new Robot("Robot 2");
         Robot r3 = new Robot("Robot 3");
 
-        r1.setBehaviour(new BehaviourAgressive());
-        r2.setBehaviour(new BehaviourDefensive());
-        r3.setBehaviour(new BehaviourNormal());
+        Behaviour b1 = new BehaviourAgressive();
+        Behaviour b2 = new BehaviourDefensive();
+        Behaviour b3 = new BehaviourNormal();
+
+        r1.setBehaviour(b1);
+        r2.setBehaviour(b2);
+        r3.setBehaviour(b3);
 
         r1.move();
         r2.move();
         r3.move();
 
-        r1.setBehaviour(new BehaviourDefensive());
-        r2.setBehaviour(new BehaviourAgressive());
+        r1.setBehaviour(b2);
+        r2.setBehaviour(b3);
 
         r1.move();
         r2.move();

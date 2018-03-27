@@ -1,15 +1,15 @@
 package iasa.lesson6.observer.entity;
 
 public class Document {
-    private final int issue;
+    private final int num;
     private static int counter = 0;
 
     public Document() {
-        this.issue = ++counter;
+        this.num = ++counter;
     }
 
     @Override
     public String toString() {
-        return "Document #" + issue;
+        return "Document #" + num;
     }
 }

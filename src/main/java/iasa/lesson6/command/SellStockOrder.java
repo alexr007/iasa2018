@@ -6,6 +6,7 @@ class SellStockOrder implements Order {
     public SellStockOrder ( StockTrade st) {
         stock = st;
     }
+    @Override
     public void execute() {
         stock.sell();
     }
