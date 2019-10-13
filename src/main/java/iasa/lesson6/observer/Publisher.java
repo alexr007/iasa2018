@@ -8,17 +8,17 @@ import java.util.List;
 public class Publisher {
     private List<Subscriber> subscribers = new ArrayList<>();
 
-    public void publishDoc() {
+    public void publishDocument(int num) {
         // create new Document
-        Document ent = new Document();
+        Document doc = new Document(num);
         // publish this Event to all subscribers
         for (Subscriber s : subscribers) {
-            s.add(ent);
+            s.add(doc);
         }
     }
 
-    public void subscribe(Subscriber subscriber) {
-        subscribers.add(subscriber);
+    public void subscribe(Subscriber s) {
+        subscribers.add(s);
     }
 
     public void unsubscribe(Subscriber s) {

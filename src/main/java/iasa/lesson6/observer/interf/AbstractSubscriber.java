@@ -27,7 +27,7 @@ public class AbstractSubscriber implements Printable<Document>{
         StringBuilder sb = new StringBuilder();
         sb.append(getName()).append("\n");
         for (Document d : this.getItems()) {
-            sb.append(d).append("\n");
+            sb.append(d.toString()).append("\n");
         }
         return sb.toString();
     }

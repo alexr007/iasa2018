@@ -9,25 +9,25 @@ public class ObserverDesignExample {
     private static Subscriber petro = new SubscriberType1("Petro");
 
     public static void main(String args[]) {
-        Publisher publisher = new Publisher();
+        Publisher pub = new Publisher();
 
-        publisher.subscribe(sasha);
-        publisher.subscribe(pasha);
-        publisher.subscribe(petro);
+        pub.subscribe(sasha);
+        pub.subscribe(pasha);
+        pub.subscribe(petro);
 
         System.out.println("-- stage 1 --");
-        publisher.publishDoc(); // add "Document #1"
+        pub.publishDocument(1); // add "Document #1"
         printMe(); // sasha pasha petro got Document #1
 
         System.out.println("-- stage 2 --");
-        publisher.publishDoc(); // add "Document #2"
+        pub.publishDocument(2); // add "Document #2"
         printMe(); // sasha pasha petro got Document #2
 
         System.out.println("-- stage 3 --");
-        publisher.subscribe(masha); // masha will get Document #3
-        publisher.unsubscribe(sasha); // sasha won't get Document #3
+        pub.subscribe(masha); // masha will get Document #3
+        pub.unsubscribe(sasha); // sasha won't get Document #3
 
-        publisher.publishDoc(); // add "Document #3"
+        pub.publishDocument(3); // add "Document #3"
         printMe();
     }
 
