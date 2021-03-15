@@ -1,0 +1,12 @@
+select {
+    margin: 15px;
+}
+
+button {
+    margin: 15px;
+    padding: 5px;
+}
+
+body {
+    display: flex;
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6",                  
+    "module": "es6",                
+    "sourceMap": true,
+    "outDir": "./public",
+    "noImplicitAny": true,
+    "strict": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  },
+  "files": ["./src/app.ts"]
+}
